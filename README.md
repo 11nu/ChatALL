@@ -78,6 +78,17 @@ Build for your current platform:
 npm run electron:build
 ```
 
+If you get the following error using macOS, follow these steps to install Python 2 and build again.
+
+```bash
+Error: Exit code: ENOENT. spawn /usr/bin/python ENOENT
+```
+
+```bash
+pyenv install 2.7.18
+PYTHON_PATH=$HOME/.pyenv/versions/2.7.18/bin/python2.7 npm run electron:build
+```
+
 Build for all platforms:
 
 ```bash
