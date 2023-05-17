@@ -21,19 +21,7 @@
 | ----------------------------------------------------------------------- | -------- | -------- |
 | [ChatGPT](https://chat.openai.com)                                      | 支持     | 支持     |
 | [Bing Chat](https://www.bing.com/new)                                   | 支持     | 无 API   |
-| [文心一言](https://yiyan.baidu.com/)                                    | 否       | 支持     |
 | [Bard](https://bard.google.com/)                                        | 支持     | 无 API   |
-| [Poe](https://poe.com/)                                                 | 即将推出 | 即将推出 |
-| [MOSS](https://moss.fastnlp.top/)                                       | 支持     | 无 API   |
-| [通义千问](http://tongyi.aliyun.com/)                                   | 即将推出 | 即将推出 |
-| [得到学习助手](https://ai.dedao.cn/)                                    | 即将推出 | 无 API   |
-| [讯飞星火](http://xinghuo.xfyun.cn/)                                    | 支持     | 即将推出 |
-| [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html)              | 支持     | 无 API   |
-| [Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/)                     | 支持     | 无 API   |
-| [ChatGLM](https://chatglm.cn/blog)                                      | 支持     | 无 API   |
-| [Claude](https://www.anthropic.com/index/introducing-claude)            | 支持     | 无 API   |
-| [Gradio](httpps://gradio.app/) 用于 Hugging Face space 或自己部署的模型 | 支持     | 无 API   |
-| [HuggingChat](https://huggingface.co/chat/)                             | 支持     | 无 API   |
 
 更多...
 
@@ -58,7 +46,7 @@ ChatALL 是一个客户端，而不是代理。因此，您必须：
 
 ## 下载 / 安装
 
-从 https://github.com/sunner/ChatALL/releases 下载
+从 https://github.com/11nu/ChatALL/releases 下载
 
 ### Windows 系统
 
@@ -78,7 +66,7 @@ ChatALL 是一个客户端，而不是代理。因此，您必须：
 
 ### 贡献新的 AI 机器人
 
-[这份文档](https://github.com/sunner/ChatALL/wiki/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84-AI-%E5%AF%B9%E8%AF%9D%E6%9C%BA%E5%99%A8%E4%BA%BA)能提供一些帮助。
+[这份文档](https://github.com/11nu/ChatALL/wiki/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84-AI-%E5%AF%B9%E8%AF%9D%E6%9C%BA%E5%99%A8%E4%BA%BA)能提供一些帮助。
 
 ### 环境依赖
 
@@ -104,17 +92,3 @@ npm run electron:build
 ```bash
 npm run electron:build -- -wml --x64 --arm64
 ```
-
-## 致谢
-
-### 贡献者
-
-<a href="https://github.com/sunner/ChatALL/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sunner/ChatALL" />
-</a>
-
-### 其它
-
-- GPT-4 贡献了大部分代码
-- ChatGPT，Bing Chat 和 Google 提供了许多解决方案（排名分先后）
-- 受 [ChatHub](https://github.com/chathub-dev/chathub) 启发。致敬！

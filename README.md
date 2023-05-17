@@ -21,19 +21,7 @@ Large Language Models (LLMs) based AI bots are amazing. However, their behavior 
 | ------------------------------------------------------------------------- | ----------- | ----------- |
 | [ChatGPT](https://chat.openai.com)                                        | Yes         | Yes         |
 | [Bing Chat](https://www.bing.com/new)                                     | Yes         | No API      |
-| [Baidu ERNIE](https://yiyan.baidu.com/)                                   | No          | Yes         |
 | [Bard](https://bard.google.com/)                                          | Yes         | No API      |
-| [Poe](https://poe.com/)                                                   | Coming soon | Coming soon |
-| [MOSS](https://moss.fastnlp.top/)                                         | Yes         | No API      |
-| [Tongyi Qianwen](http://tongyi.aliyun.com/)                               | Coming soon | Coming soon |
-| [Dedao Learning Assistant](https://ai.dedao.cn/)                          | Coming soon | No API      |
-| [iFLYTEK SPARK](http://xinghuo.xfyun.cn/)                                 | Yes         | Coming soon |
-| [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html)                | Yes         | No API      |
-| [Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/)                       | Yes         | No API      |
-| [ChatGLM](https://chatglm.cn/blog)                                        | Yes         | No API      |
-| [Claude](https://www.anthropic.com/index/introducing-claude)              | Yes         | No API      |
-| [Gradio](https://gradio.app/) for Hugging Face space/self-deployed models | Yes         | No API      |
-| [HuggingChat](https://huggingface.co/chat/)                               | Yes         | No API      |
 
 And more...
 
@@ -58,7 +46,7 @@ ChatALL is a client, not a proxy. Therefore, you must:
 
 ## Download / Install
 
-Download from https://github.com/sunner/ChatALL/releases
+Download from https://github.com/11nu/ChatALL/releases
 
 ### On Windows
 
@@ -78,7 +66,7 @@ Download the .AppImage file, make it executable, and enjoy the click-to-run expe
 
 ### Contribute a Bot
 
-[The guide](https://github.com/sunner/ChatALL/wiki/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84-AI-%E5%AF%B9%E8%AF%9D%E6%9C%BA%E5%99%A8%E4%BA%BA) may help you.
+[The guide](https://github.com/11nu/ChatALL/wiki/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84-AI-%E5%AF%B9%E8%AF%9D%E6%9C%BA%E5%99%A8%E4%BA%BA) may help you.
 
 ### Run
 
@@ -102,17 +90,3 @@ Build for all platforms:
 ```bash
 npm run electron:build -- -wml --x64 --arm64
 ```
-
-## Credits
-
-### Contributors
-
-<a href="https://github.com/sunner/ChatALL/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sunner/ChatALL" />
-</a>
-
-### Others
-
-- GPT-4 contributed much of the code
-- ChatGPT, Bing Chat and Google provide many solutions (ranked in order)
-- Inspired by [ChatHub](https://github.com/chathub-dev/chathub). Respect!
