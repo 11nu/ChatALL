@@ -112,19 +112,10 @@ import ChatGPT4Bot from "@/bots/openai/ChatGPT4Bot";
 import BingChatPreciseBot from "@/bots/microsoft/BingChatPreciseBot";
 import BingChatBalancedBot from "@/bots/microsoft/BingChatBalancedBot";
 import BingChatCreativeBot from "@/bots/microsoft/BingChatCreativeBot";
-import SparkBot from "@/bots/SparkBot";
 import BardBot from "@/bots/BardBot";
 import OpenAIAPI35Bot from "@/bots/openai/OpenAIAPI35Bot";
 import OpenAIAPI4Bot from "@/bots/openai/OpenAIAPI4Bot";
-import MOSSBot from "@/bots/MOSSBot";
-import WenxinQianfanBot from "@/bots/baidu/WenxinQianfanBot";
-import VicunaBot from "@/bots/lmsys/VicunaBot";
-import ChatGLMBot from "@/bots/lmsys/ChatGLMBot";
-import AlpacaBot from "@/bots/lmsys/AlpacaBot";
-import ClaudeBot from "@/bots/lmsys/ClaudeBot";
 import DevBot from "@/bots/DevBot";
-import GradioAppBot from "@/bots/huggingface/GradioAppBot";
-import HuggingChatBot from "@/bots/huggingface/HuggingChatBot";
 import store from "./store";
 
 export default {
@@ -145,16 +136,7 @@ export default {
         BingChatCreativeBot.getInstance(),
         BingChatBalancedBot.getInstance(),
         BingChatPreciseBot.getInstance(),
-        ClaudeBot.getInstance(),
         BardBot.getInstance(),
-        WenxinQianfanBot.getInstance(),
-        SparkBot.getInstance(),
-        HuggingChatBot.getInstance(),
-        VicunaBot.getInstance(),
-        AlpacaBot.getInstance(),
-        ChatGLMBot.getInstance(),
-        MOSSBot.getInstance(),
-        GradioAppBot.getInstance(),
       ],
       activeBots: {},
 

@@ -1,12 +1,11 @@
 "use strict";
 
-import { app, protocol, BrowserWindow, ipcMain, autoUpdater } from "electron";
+import { app, protocol, BrowserWindow, ipcMain } from "electron";
 import { createProtocol } from "vue-cli-plugin-electron-builder/lib";
 import installExtension, { VUEJS3_DEVTOOLS } from "electron-devtools-installer";
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 const DEFAULT_USER_AGENT = ""; // Empty string to use the Electron default
-let mainWindow = null;
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
@@ -30,8 +29,6 @@ async function createWindow() {
       preload: "./preload.js",
     },
   });
-
-  mainWindow = win;
 
   // Modify the SameSite attribute for all cookies
   win.webContents.session.cookies.on(
@@ -148,22 +145,6 @@ function createNewWindow(url, userAgent = "") {
     newWin.webContents.setUserAgent(userAgent);
   }
   newWin.loadURL(url);
-
-  // Get the secret of MOSS
-  if (url.includes("moss.fastnlp.top")) {
-    newWin.on("close", async (e) => {
-      try {
-        e.preventDefault(); // Prevent the window from closing
-        const secret = await newWin.webContents.executeJavaScript(
-          'localStorage.getItem("flutter.token");',
-        );
-        mainWindow.webContents.send("moss-secret", secret);
-      } catch (error) {
-        console.error(error);
-      }
-      newWin.destroy(); // Destroy the window manually
-    });
-  }
 }
 
 ipcMain.handle("create-new-window", (event, url, userAgent) => {

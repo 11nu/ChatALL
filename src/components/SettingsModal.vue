@@ -48,13 +48,7 @@ import { useI18n } from "vue-i18n";
 import ChatGPTBotSettings from "@/components/BotSettings/ChatGPTBotSettings.vue";
 import OpenAIAPIBotSettings from "@/components/BotSettings/OpenAIAPIBotSettings.vue";
 import BingChatBotSettings from "@/components/BotSettings/BingChatBotSettings.vue";
-import SparkBotSettings from "./BotSettings/SparkBotSettings.vue";
 import BardBotSettings from "@/components/BotSettings/BardBotSettings.vue";
-import MOSSBotSettings from "@/components/BotSettings/MOSSBotSettings.vue";
-import WenxinQianfanBotSettings from "@/components/BotSettings/WenxinQianfanBotSettings.vue";
-import GradioAppBotSettings from "@/components/BotSettings/GradioAppBotSettings.vue";
-import LMSYSBotSettings from "@/components/BotSettings/LMSYSBotSettings.vue";
-import HuggingChatBotSettings from "@/components/BotSettings/HuggingChatBotSettings.vue";
 
 const { t: $t, locale } = useI18n();
 const store = useStore();
@@ -65,14 +59,8 @@ const emit = defineEmits(["update:open", "done"]);
 const settings = [
   ChatGPTBotSettings,
   OpenAIAPIBotSettings,
-  WenxinQianfanBotSettings,
-  GradioAppBotSettings,
   BardBotSettings,
   BingChatBotSettings,
-  HuggingChatBotSettings,
-  LMSYSBotSettings,
-  MOSSBotSettings,
-  SparkBotSettings,
 ];
 
 const languages = computed(() => [
