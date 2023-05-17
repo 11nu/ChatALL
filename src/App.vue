@@ -160,12 +160,6 @@ export default {
         bots,
       });
 
-      this.$matomo.trackEvent(
-        "prompt",
-        "send",
-        "Active bots count",
-        bots.length,
-      );
       // Clear the textarea after sending the prompt
       this.prompt = "";
     },

@@ -4,7 +4,7 @@ export default class DevBot extends Bot {
   static _brandId = "dev"; // Brand id of the bot, should be unique. Used in i18n.
   static _className = "DevBot"; // Class name of the bot
   static _logoFilename = "default-logo.svg"; // Place it in assets/bots/
-  static _loginUrl = "http://chatall.ai";
+  static _loginUrl = "http://example.local";
   static _isAvailable = true;
 
   constructor() {

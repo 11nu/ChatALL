@@ -3,10 +3,6 @@ import VuexPersist from "vuex-persist";
 import i18n from "../i18n";
 import messagesPersist from "./messagesPersist";
 
-const getMatomo = function () {
-  return window.Piwik.getAsyncTracker();
-};
-
 // 初始化 VuexPersist 实例
 const vuexPersist = new VuexPersist({
   key: "chatall-app", // 用于存储的键名，可以根据你的应用更改
@@ -105,7 +101,6 @@ export default createStore({
         hide: false,
       });
 
-      const $matomo = getMatomo();
       for (const bot of bots) {
         const message = {
           type: "response",
@@ -129,13 +124,6 @@ export default createStore({
             dispatch("updateMessage", { index, message: values }),
           message.index,
         );
-
-        $matomo.trackEvent(
-          "prompt",
-          "sendTo",
-          bot.constructor._className,
-          prompt.length,
-        );
       }
     },
     updateMessage({ commit, state }, { index, message }) {
@@ -145,33 +133,6 @@ export default createStore({
       commit("incrementUpdateCounter");
 
       message = { ...state.messages[index], ...message };
-      const $matomo = getMatomo();
-      if (message.done) {
-        $matomo.trackEvent(
-          "prompt",
-          "received",
-          message.className,
-          message.content.length,
-        );
-      }
-
-      if (message.hide !== undefined) {
-        $matomo.trackEvent(
-          "vote",
-          "hide",
-          message.className,
-          message.hide ? 1 : -1,
-        );
-      }
-
-      if (message.highlight !== undefined) {
-        $matomo.trackEvent(
-          "vote",
-          "highlight",
-          message.className,
-          message.highlight ? 1 : -1,
-        );
-      }
     },
     clearMessages({ commit }) {
       commit("setMessages", []);

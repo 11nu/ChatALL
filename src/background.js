@@ -12,9 +12,6 @@ protocol.registerSchemesAsPrivileged([
   { scheme: "app", privileges: { secure: true, standard: true } },
 ]);
 
-// Auto Updater
-require("update-electron-app")();
-
 async function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
@@ -43,7 +40,7 @@ async function createWindow() {
         const domain = cookie.domain.startsWith(".")
           ? cookie.domain.substring(1)
           : cookie.domain;
-        const domainsToFilter = ["xfyun.cn"];
+        const domainsToFilter = ["example.local"];
 
         if (domainsToFilter.some((d) => domain.includes(d))) {
           try {
