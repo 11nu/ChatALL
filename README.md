@@ -2,8 +2,6 @@
   <img src="src/assets/logo-cover.png" width=256></img>
   <p><strong>Chat with ALL AI Bots Concurrently, Discover the Best</strong></p>
 
-[Deutsch](README_DE-DE.md) | English | [简体中文](README_ZH-CN.md)
-
 </div>
 
 ## Screenshots
@@ -33,7 +31,6 @@ And more...
 - Automatically keep ChatGPT session alive
 - Enable/disable any bots at any time
 - Switch between one, two, or three-column view
-- Supports multiple languages (en, zh)
 - [TODO] Best recommendations
 
 ## Prerequisites
@@ -63,10 +60,6 @@ For other Macs, download \*-mac-x64.dmg file.
 Download the .AppImage file, make it executable, and enjoy the click-to-run experience.
 
 ## For developers
-
-### Contribute a Bot
-
-[The guide](https://github.com/11nu/ChatALL/wiki/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84-AI-%E5%AF%B9%E8%AF%9D%E6%9C%BA%E5%99%A8%E4%BA%BA) may help you.
 
 ### Run
 
