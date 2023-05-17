@@ -3,10 +3,10 @@
   "version": "1.17.9",
   "main": "background.js",
   "description": "Chat with multiple AI bots and discover the best.",
-  "author": "Sunner",
+  "author": "11nu",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sunner/ChatALL.git"
+    "url": "https://github.com/11nu/ChatALL.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
